@@ -1,0 +1,28 @@
+# W3 独立项目的忽略规则（不影响 W2 根目录）。
+# 保留源码、uv.lock、教师材料，以及报告所需的结果文件。
+# 结果文件 results.csv / results.png / results-table.tex / results-params.tex 与 report.pdf 均保留。
+
+# 虚拟环境与 Python 缓存
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# LaTeX 中间文件（仅忽略中间产物，保留 report.tex 与 report.pdf）
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.xdv
+*.synctex.gz
+*.bbl
+*.blg
+
+# 凭据与本地环境变量（不要提交任何 API Key / token）
+.env
+.env.*
+!.env.example
+*.key
+*.pem
